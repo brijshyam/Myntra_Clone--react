@@ -19,11 +19,11 @@ function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
                     <li className="item">Kid</li>
                 </ul>
                 <div className="search-wrapper">
-                    <img
+                    {/* <img
                         className="search-icon"
                         src="src/search-icon.svg"
                         alt=""
-                    />
+                    /> */}
                     <input
                         className="input-bar"
                         type="text"
