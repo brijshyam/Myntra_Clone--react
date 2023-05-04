@@ -41,7 +41,7 @@ function Sidebar({ gender, setGender, setCategory }) {
                 </div>
             </div>
 
-            <div className="Categories">
+            <div className="categories">
                 <p className="side-headings">Catagory:-</p>
                 <div className="category-one">
                     <input

@@ -120,7 +120,7 @@ function ProductModal({
                     </div>
                     <div className="right-part">
                         <span className="close-btn" onClick={closeBtnHandler}>
-                            X
+                            x
                         </span>
                     </div>
                 </div>

@@ -15,7 +15,6 @@
     flex-grow: 1;
     padding: 0.2rem;
     box-shadow: 1px 1px 20px #d4d3d3;
-    position: relative;
 
 }
 
@@ -102,6 +101,7 @@ li {
 .cart-holder img {
     width: 30px;
     cursor: pointer;
+    position: relative;
 }
 
 .cart-list-length {

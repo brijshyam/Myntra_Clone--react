@@ -50,7 +50,7 @@ function CartContainerModal({
                         );
                     })}
                 </div>
-                {itemsInCart.length > 0 && (
+                {
                     <div className="content-footer">
                         <p className="total-original-price ">
                             Total Original Price{" "}
@@ -78,7 +78,7 @@ function CartContainerModal({
                         )}`}</p>
                         <BuyButton />
                     </div>
-                )}
+                }
             </div>
         )
     );

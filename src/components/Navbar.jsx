@@ -33,8 +33,8 @@ function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
                 </div>
                 <div className="cart-holder" onClick={cartClickHandler}>
                     <img src="src/shopping-cart-solid.svg" alt="" />
+                    <div className="cart-list-length">{numberOfItemInCart}</div>
                 </div>
-                <div className="cart-list-length">{numberOfItemInCart}</div>
             </nav>
         </>
     );
