@@ -115,7 +115,7 @@ function ProductModal({
                             className="add-to-cart-btn"
                             onClick={addToCartHandler}
                         >
-                            Add to cart
+                            Add to Cart
                         </button>
                     </div>
                     <div className="right-part">
