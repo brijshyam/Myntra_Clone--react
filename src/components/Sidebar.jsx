@@ -42,7 +42,7 @@ function Sidebar({ gender, setGender, setCategory }) {
             </div>
 
             <div className="categories">
-                <p className="side-headings">Catagory:-</p>
+                <p className="side-headings">Categories</p>
                 <div className="category-one">
                     <input
                         type="checkbox"
