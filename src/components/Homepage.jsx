@@ -42,9 +42,7 @@ function Homepage() {
             if (category === "") {
                 return sortedData;
             } else if (category === "white") {
-                return sortedData.filter(
-                    (item) => item.cat.toLowerCase() === "w"
-                );
+                return sortedData.filter((item) => item.cat === "W");
             } else if (category === "foldedSleeve") {
                 return sortedData.filter(
                     (item) => item.folded.toLowerCase() === "y"
