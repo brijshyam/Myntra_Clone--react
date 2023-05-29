@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/App.css";
-import logo from "../icon.jpeg";
-import cartSvg from "../shopping-cart-solid.svg";
+import logo from "../assets/icon.jpeg";
+import cartSvg from "../assets/shopping-cart-solid.svg";
 import prodcutData from "../../data";
 import Product from "./Product";
 const PageToRender = () => {

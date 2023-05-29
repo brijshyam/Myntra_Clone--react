@@ -1,4 +1,6 @@
 import React from "react";
+import Product from "./Product";
+import SortingComponent from "./SortingComponent";
 
 function ProductDisplay({
     data,
@@ -6,74 +8,26 @@ function ProductDisplay({
     setClickedItem,
     setSortBasedOn,
 }) {
-    const tileClickHandler = (cardData) => {
+    const productTileClickHandler = (cardData) => {
         setShowModal(true);
         setClickedItem(cardData);
     };
-    const filterSelectHandler = (e) => {
-        const basedOn = e.target.value;
-        if (basedOn === "discount") {
-            setSortBasedOn("discount");
-        } else if (basedOn === "price") {
-            setSortBasedOn("price");
-        } else {
-            setSortBasedOn("new");
-        }
-    };
-    function ProductTile({ item, tileClickHandler }) {
-        return (
-            <>
-                <div
-                    className="indiv-tile-holder"
-                    onClick={() => tileClickHandler(item)}
-                >
-                    <img
-                        className="product-image"
-                        src={item.otherImages[0]}
-                        alt=""
-                    />
-                    <h3 className="product-name">{item.name}</h3>
-                    <p className="prodcut-desc">{item.description}</p>
-                    <p className="price-para">
-                        <span className="final-price">
-                            Rs.{item.finalPrice}
-                        </span>
-                        <strike className="">{item.strickPrice}</strike>
-                        <span className="discount">{item.discount}% OFF</span>
-                    </p>
-                </div>
-            </>
-        );
-    }
 
     return (
         <div className="product-wrapper">
-            <div className="sort-holder">
-                <span className="sortby">Sort by:-</span>
-                <select
-                    name=""
-                    id=""
-                    className="dropdown"
-                    onChange={filterSelectHandler}
-                >
-                    <option className="options" value="new">
-                        What's New
-                    </option>
-                    <option className="options" value="price">
-                        Price low to high
-                    </option>
-                    <option className="options" value="discount">
-                        Better Discount
-                    </option>
-                </select>
-            </div>
+            <SortingComponent setSortBasedOn={setSortBasedOn} />
             <div className="product-tile-holder">
                 {data.map((item, index) => {
                     return (
-                        <ProductTile
+                        // <ProductTile
+                        //     key={index}
+                        //     item={item}
+                        //     productTileClickHandler={productTileClickHandler}
+                        // />
+                        <Product
                             key={index}
-                            item={item}
-                            tileClickHandler={tileClickHandler}
+                            data={item}
+                            clickHandler={productTileClickHandler}
                         />
                     );
                 })}

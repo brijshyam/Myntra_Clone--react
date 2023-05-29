@@ -33,3 +33,29 @@ export default function Product(props) {
         </div>
     );
 }
+
+/* function ProductTile({ item, tileClickHandler }) {
+        return (
+            <>
+                <div
+                    className="indiv-tile-holder"
+                    onClick={() => tileClickHandler(item)}
+                >
+                    <img
+                        className="product-image"
+                        src={item.otherImages[0]}
+                        alt=""
+                    />
+                    <h3 className="product-name">{item.name}</h3>
+                    <p className="prodcut-desc">{item.description}</p>
+                    <p className="price-para">
+                        <span className="final-price">
+                            Rs.{item.finalPrice}
+                        </span>
+                        <strike className="">{item.strickPrice}</strike>
+                        <span className="discount">{item.discount}% OFF</span>
+                    </p>
+                </div>
+            </>
+        );
+    } */

@@ -1,16 +1,29 @@
 import React from 'react'
-import '../styles/App.css';
-import PageToRender from './PageToRender';
-// import Homepage from './Homepage';
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import '../styles/MyApp.css';
+import { BoxIconElement } from 'boxicons';
+// import PageToRender from './PageToRender'; // this was added later to render according to test cases 
+import Homepage from './Homepage';
+import LandingPage from './LandingPage';
 const App = () => {
 
   return (
-    <div id="main">
-      {/* <Homepage /> */}
-      <PageToRender />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<LandingPage />} />
+        <Route path="/shirt" element={<Homepage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
 
 export default App;
+
+
+/* 
+  CICD pipeline
+*/
+
+
+

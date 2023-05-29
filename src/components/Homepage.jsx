@@ -14,6 +14,7 @@ function Homepage() {
     const [showItemsInCart, setShowItemsInCart] = useState(false);
     // Moved while rearranging..
     const [gender, setGender] = useState("M");
+    ``;
     const [category, setCategory] = useState("");
     // Adding logics here only to update the code
     const [dataToBeRendered, setDataToBeRendered] = useState(data);
