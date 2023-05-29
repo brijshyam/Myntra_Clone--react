@@ -12,19 +12,19 @@ function LandingPageCarousel() {
                 showStatus={false}
             >
                 <div>
-                    <img src="src/assets/carousel-item-1.webp" />
+                    <img src="../../public/assets/carousel-item-1.webp" />
                 </div>
                 <div>
-                    <img src="src/assets/carousel-item-2.webp" />
+                    <img src="../../public/assets/carousel-item-2.webp" />
                 </div>
                 <div>
-                    <img src="src/assets/carousel-item-3.webp" />
+                    <img src="../../public/assets/carousel-item-3.webp" />
                 </div>
                 <div>
-                    <img src="src/assets/carousel-item-4.webp" />
+                    <img src="../../public/assets/carousel-item-4.webp" />
                 </div>
                 <div>
-                    <img src="src/assets/carousel-item-5.webp" />
+                    <img src="../../public/assets/carousel-item-5.webp" />
                 </div>
             </Carousel>
         </div>

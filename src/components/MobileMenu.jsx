@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/myntra-icon-logo.svg";
+import logo from "../../public/assets/myntra-icon-logo.svg";
 
 function MobileMenu() {
     return (

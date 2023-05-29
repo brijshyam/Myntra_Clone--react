@@ -5,7 +5,8 @@ import {
     kids,
     homeAndLiving,
     beauty,
-} from "../assets/data_items/subMenuData";
+} from "../data_items/subMenuData";
+import logo from "../../public/assets/myntra-icon-logo.svg";
 import SubMenuRenderer from "./SubMenuRenderer";
 
 function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
@@ -80,7 +81,7 @@ function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
         <>
             <nav className="nav">
                 <div className="logo-holder">
-                    <img src="src/assets/myntra-icon-logo.svg" alt="logo" />
+                    <img src={logo} alt="logo" />
                 </div>
                 <ul className="menu-items-container">
                     <li
@@ -152,7 +153,7 @@ function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
                 <div className="search-wrapper">
                     <img
                         className="search-icon"
-                        src="src/assets/search-icon.svg"
+                        src="../../public/assets/search-icon.svg"
                         alt=""
                     />
                     <input

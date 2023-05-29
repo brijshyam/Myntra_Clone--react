@@ -1,5 +1,5 @@
 import React from "react";
-import { dodtData } from "../assets/data_items/dodt-data";
+import { dodtData } from "../data_items/dodt-data";
 
 const dodtContainerStyle = {
     marginTop: "3rem",

@@ -1,9 +1,9 @@
 import React from "react";
-import { col1, col2, popularSearches } from "../assets/data_items/footerItems";
-import googlePlay from "../assets/google_play-download.png";
-import appStore from "../assets/apple_store-download.png";
-import guaranteeImg from "../assets/guarantee-img.png";
-import returnPolicyImg from "../assets/return-policy-img.png";
+import { col1, col2, popularSearches } from "../data_items/footerItems";
+import googlePlay from "../../public/assets/google_play-download.png";
+import appStore from "../../public/assets/apple_store-download.png";
+import guaranteeImg from "../../public/assets/guarantee-img.png";
+import returnPolicyImg from "../../public/assets/return-policy-img.png";
 
 function Footer() {
     console.log(col1[0]);

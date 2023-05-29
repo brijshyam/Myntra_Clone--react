@@ -32,12 +32,13 @@
     box-shadow: 1px 1px 5px var(--shadow-color);
     z-index: 5;
     margin-bottom: 1rem;
+    padding: 0.5rem 0;
 }
 
 .menu-items-container {
     display: flex;
     justify-self: flex-start;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     margin-left: -3rem;
 }
 
@@ -70,10 +71,8 @@
     scale: 1;
 }
 
-.icon-holder {
-    margin-left: -5rem;
-    width: 10px;
-    align-self: flex-start;
+.logo-holder {
+    justify-self: flex-start;
 }
 
 .logo-holder img {

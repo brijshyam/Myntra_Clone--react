@@ -5,7 +5,7 @@ const subMenuStyle = {
     width: "fit-content",
     height: "80vh",
     top: "9%",
-    left: "140px",
+    left: "252px",
     backgroundColor: "white",
     border: "1px solid #ccc",
     zIndex: "3",

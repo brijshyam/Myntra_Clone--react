@@ -1,5 +1,5 @@
 import React from "react";
-import { BiggestDeal } from "../assets/data_items/dodt-data";
+import { BiggestDeal } from "../data_items/dodt-data";
 
 const h1Style = {
     margin: "4rem 2rem",

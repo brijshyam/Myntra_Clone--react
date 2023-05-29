@@ -4,7 +4,7 @@ function CurrentOfferStickey({ isMobile }) {
     const currentOfferStyle = {
         position: "fixed",
         top: "50%",
-        right: "-7.5%",
+        right: "-7%",
         transform: "rotate(-90deg)",
         zIndex: "2",
         backgroundColor: "#444",

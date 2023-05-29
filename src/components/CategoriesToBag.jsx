@@ -1,5 +1,5 @@
 import React from "react";
-import { catToBag } from "../assets/data_items/dodt-data";
+import { catToBag } from "../data_items/dodt-data";
 
 const h1Style = {
     margin: "4rem 2rem",
