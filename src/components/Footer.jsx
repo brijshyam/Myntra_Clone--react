@@ -6,7 +6,6 @@ import guaranteeImg from "../../public/assets/guarantee-img.png";
 import returnPolicyImg from "../../public/assets/return-policy-img.png";
 
 function Footer() {
-    console.log(col1[0]);
     return (
         <div className="footer-container">
             <div className="foot-col1">

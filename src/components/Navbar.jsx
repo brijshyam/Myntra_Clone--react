@@ -7,6 +7,7 @@ import {
     beauty,
 } from "../data_items/subMenuData";
 import logo from "../../public/assets/myntra-icon-logo.svg";
+import searchIcon from "../../public/assets/search-icon.svg";
 import SubMenuRenderer from "./SubMenuRenderer";
 
 function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
@@ -151,11 +152,7 @@ function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
                     </li>
                 </ul>
                 <div className="search-wrapper">
-                    <img
-                        className="search-icon"
-                        src="../../public/assets/search-icon.svg"
-                        alt=""
-                    />
+                    <img className="search-icon" src={searchIcon} alt="" />
                     <input
                         className="input-bar"
                         type="text"

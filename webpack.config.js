@@ -2,6 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
+    mode: 'development',
+
 
     output: {
         path: path.join(__dirname, "/dist"),
@@ -14,7 +16,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|jpe?g|gif|svg)$/i,
+                test: /\.(png|jpe?g|gif|svg|webp)$/i,
                 use: [
                     {
                         loader: 'file-loader',
