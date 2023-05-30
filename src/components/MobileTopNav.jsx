@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../public/assets/myntra-icon-logo.svg";
+import MobileMenuModal from "./MobileMenuModal";
 
-function MobileMenu() {
+function MobileTopNav() {
+    const [showMenu, setShowMenu] = useState(false);
+
+    const hamburgerClickHandler = (e) => {
+        setShowMenu(true);
+    };
     return (
         <div className="mobile-menu-wrapper">
-            <div className="left-wrapper">
+            {showMenu && <MobileMenuModal setShowMenu={setShowMenu} />}
+            <div className="left-wrapper" onClick={hamburgerClickHandler}>
                 <div className="hamburger-container">
                     <span className="ham-bar"></span>
                     <span className="ham-bar"></span>
@@ -27,4 +34,4 @@ function MobileMenu() {
     );
 }
 
-export default MobileMenu;
+export default MobileTopNav;

@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import BiggestDealOnBrands from "./BiggestDealOnBrands";
 import CategoriesToBag from "./CategoriesToBag";
 import CurrentOfferStickey from "./CurrentOfferStickey";
-import MobileMenu from "./MobileMenu";
+import MobileTopNav from "./MobileTopNav";
 
 const LandingPage = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -24,7 +24,7 @@ const LandingPage = () => {
     return (
         <>
             <Navbar />
-            <MobileMenu />
+            <MobileTopNav />
 
             <div style={wrapperStyle}>
                 <LandingPageCarousel />

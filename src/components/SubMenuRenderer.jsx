@@ -4,8 +4,8 @@ const subMenuStyle = {
     position: "fixed",
     width: "fit-content",
     height: "80vh",
-    top: "9%",
-    left: "252px",
+    top: "10.2%",
+    left: "199px",
     backgroundColor: "white",
     border: "1px solid #ccc",
     zIndex: "3",
@@ -20,7 +20,17 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[0].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a href="">{item}</a>
+                            <a
+                                href={item.path}
+                                id={`${item.enable ? "with-link" : ""}`}
+                                title={`${
+                                    item.enable
+                                        ? ""
+                                        : "This link is not active, probably under-development"
+                                }`}
+                            >
+                                {item.menuItem}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -31,7 +41,17 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[1].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a href="">{item}</a>
+                            <a
+                                href={item.path}
+                                id={`${item.enable ? "with-link" : ""}`}
+                                title={`${
+                                    item.enable
+                                        ? ""
+                                        : "This link is not active, probably under-development"
+                                }`}
+                            >
+                                {item.menuItem}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -43,7 +63,17 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[2].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a href="">{item}</a>
+                            <a
+                                href={item.path}
+                                id={`${item.enable ? "with-link" : ""}`}
+                                title={`${
+                                    item.enable
+                                        ? ""
+                                        : "This link is not active, probably under-development"
+                                }`}
+                            >
+                                {item.menuItem}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -54,7 +84,17 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[3].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a href="">{item}</a>
+                            <a
+                                href={item.path}
+                                id={`${item.enable ? "with-link" : ""}`}
+                                title={`${
+                                    item.enable
+                                        ? ""
+                                        : "This link is not active, probably under-development"
+                                }`}
+                            >
+                                {item.menuItem}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -66,7 +106,17 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[4].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a href="">{item}</a>
+                            <a
+                                href={item.path}
+                                id={`${item.enable ? "with-link" : ""}`}
+                                title={`${
+                                    item.enable
+                                        ? ""
+                                        : "This link is not active, probably under-development"
+                                }`}
+                            >
+                                {item.menuItem}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -77,7 +127,17 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[5].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a href="">{item}</a>
+                            <a
+                                href={item.path}
+                                id={`${item.enable ? "with-link" : ""}`}
+                                title={`${
+                                    item.enable
+                                        ? ""
+                                        : "This link is not active, probably under-development"
+                                }`}
+                            >
+                                {item.menuItem}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -89,7 +149,17 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[6].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a href="">{item}</a>
+                            <a
+                                href={item.path}
+                                id={`${item.enable ? "with-link" : ""}`}
+                                title={`${
+                                    item.enable
+                                        ? ""
+                                        : "This link is not active, probably under-development"
+                                }`}
+                            >
+                                {item.menuItem}
+                            </a>
                         </li>
                     ))}
                 </ul>

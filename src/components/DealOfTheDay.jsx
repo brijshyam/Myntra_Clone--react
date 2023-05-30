@@ -5,10 +5,6 @@ const dodtContainerStyle = {
     marginTop: "3rem",
 };
 
-const h1Style = {
-    margin: "4rem 2rem",
-};
-
 const dataContainerStyle = {
     display: "flex",
     flexDirection: "row",
@@ -23,7 +19,7 @@ const dataImageStyle = {
 function DealOfTheDay() {
     return (
         <div style={dodtContainerStyle}>
-            <h1 style={h1Style}>Deal of the Day</h1>
+            <h1 className="deal-headers">Deal of the Day</h1>
             <div style={dataContainerStyle}>
                 {dodtData.map((item) => {
                     return (
