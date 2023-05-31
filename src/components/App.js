@@ -5,6 +5,7 @@ import { BoxIconElement } from 'boxicons';
 // import PageToRender from './PageToRender'; // this was added later to render according to test cases 
 import Homepage from './Homepage';
 import LandingPage from './LandingPage';
+import PaymentPage from './PaymentPage';
 const App = () => {
 
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/shirt" element={<Homepage />} />
+        <Route path="/payment" element={<PaymentPage />} />
       </Routes>
     </BrowserRouter>
   )

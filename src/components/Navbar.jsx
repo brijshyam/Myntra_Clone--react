@@ -24,7 +24,6 @@ function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
     };
 
     const hoverHandler = (e) => {
-        // setIsHovered(true);
         const hoveredOn = e.target.textContent;
         switch (hoveredOn) {
             case "Men":
@@ -166,15 +165,15 @@ function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
                     </div>
                     <div className="wishlist-holder" onClick={cartClickHandler}>
                         <box-icon name="shopping-bag"></box-icon>
-                        {numberOfItemInCart && (
+                        {/* {numberOfItemInCart && (
                             <div className="added-count">
                                 {numberOfItemInCart}
                             </div>
-                        )}
+                        )} */}
                     </div>
                     <div className="cart-holder" onClick={cartClickHandler}>
                         <box-icon name="cart"></box-icon>
-                        {numberOfItemInCart && (
+                        {numberOfItemInCart > 0 && (
                             <div className="added-count">
                                 {numberOfItemInCart}
                             </div>

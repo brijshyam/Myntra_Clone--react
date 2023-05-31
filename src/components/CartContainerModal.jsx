@@ -23,10 +23,9 @@ function CartContainerModal({
                     <h4 className="content-item-count">
                         Total Items {itemsInCart.length}
                     </h4>
-                    {itemsInCart.map((item) => {
-                        console.log("checking images ", item);
+                    {itemsInCart.map((item, index) => {
                         return (
-                            <div className="content-body-item">
+                            <div className="content-body-item" key={index}>
                                 <img
                                     src={item.otherImages[0]}
                                     alt=""
@@ -76,7 +75,7 @@ function CartContainerModal({
                             },
                             0
                         )}`}</p>
-                        <BuyButton />
+                        <BuyButton totalItemInCart={itemsInCart.length} />
                     </div>
                 }
             </div>

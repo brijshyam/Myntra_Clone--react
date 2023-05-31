@@ -16,17 +16,6 @@ function ProductModal({
     const chosenSizeHandler = (e) => {
         setChosenSize(e.target.innerText);
     };
-    /* const addToCartHandler = () => {
-        setProductToBeAdded({
-            ...clickedItem,
-            selectedSize: chosenSize,
-        });
-        setShowModal(false);
-        setNumberOfItemInCart((prev) => prev + 1);
-        const allItems = [...itemsInCart, productToBeAdded];
-        setItemsInCart(allItems);
-        console.log("items in cart now: ", allItems);
-    }; */
     const addToCartHandler = () => {
         const updatedProductToBeAdded = {
             ...clickedItem,

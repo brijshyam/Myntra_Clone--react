@@ -72,7 +72,9 @@ function Homepage() {
                   {
                       name: "NO DATA FOUND!!!",
                       description: "please search for something else...",
-                      otherImages: ["https://hellow.com"],
+                      otherImages: [
+                          "https://i.pinimg.com/originals/c9/22/68/c92268d92cf2dbf96e3195683d9e14fb.png",
+                      ],
                   },
               ]);
     }, [gender, sortBasedOn, category, searchValue]);
