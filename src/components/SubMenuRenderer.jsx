@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const subMenuStyle = {
     position: "fixed",
@@ -20,8 +21,8 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[0].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a
-                                href={item.path}
+                            <Link
+                                to={item.path}
                                 id={`${item.enable ? "with-link" : ""}`}
                                 title={`${
                                     item.enable
@@ -30,7 +31,7 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                                 }`}
                             >
                                 {item.menuItem}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -41,8 +42,8 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[1].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a
-                                href={item.path}
+                            <Link
+                                to={item.path}
                                 id={`${item.enable ? "with-link" : ""}`}
                                 title={`${
                                     item.enable
@@ -51,7 +52,7 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                                 }`}
                             >
                                 {item.menuItem}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -63,8 +64,8 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[2].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a
-                                href={item.path}
+                            <Link
+                                to={item.path}
                                 id={`${item.enable ? "with-link" : ""}`}
                                 title={`${
                                     item.enable
@@ -73,7 +74,7 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                                 }`}
                             >
                                 {item.menuItem}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -84,8 +85,8 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[3].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a
-                                href={item.path}
+                            <Link
+                                to={item.path}
                                 id={`${item.enable ? "with-link" : ""}`}
                                 title={`${
                                     item.enable
@@ -94,7 +95,7 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                                 }`}
                             >
                                 {item.menuItem}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -106,8 +107,8 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[4].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a
-                                href={item.path}
+                            <Link
+                                to={item.path}
                                 id={`${item.enable ? "with-link" : ""}`}
                                 title={`${
                                     item.enable
@@ -116,7 +117,7 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                                 }`}
                             >
                                 {item.menuItem}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -127,8 +128,8 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[5].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a
-                                href={item.path}
+                            <Link
+                                to={item.path}
                                 id={`${item.enable ? "with-link" : ""}`}
                                 title={`${
                                     item.enable
@@ -137,7 +138,7 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                                 }`}
                             >
                                 {item.menuItem}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -149,8 +150,8 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                 <ul>
                     {submenuData[6].categories.map((item, index) => (
                         <li className="submenu-item" key={index}>
-                            <a
-                                href={item.path}
+                            <Link
+                                to={item.path}
                                 id={`${item.enable ? "with-link" : ""}`}
                                 title={`${
                                     item.enable
@@ -159,7 +160,7 @@ function SubMenuRenderer({ submenuData, submenuHeadingColor }) {
                                 }`}
                             >
                                 {item.menuItem}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
