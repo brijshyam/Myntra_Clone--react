@@ -1,0 +1,39 @@
+.order-container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+.order-container .order-card {
+    background-color: var(--shuttle-grey);
+    margin-top: 2rem;
+    border: 1px solid var(--shadow-color);
+    border-radius: 5px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    cursor: pointer;
+}
+
+.order-container .order-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+}
+
+.order-card .order-img {
+    grid-column: 2/4;
+    height: 80px;
+}
+
+.order-card .order-detail {
+    grid-column: 4/7;
+}
+
+.order-card .order-price {
+    grid-column: 7/8;
+}
+
+.order-card .order-status {
+    grid-column: 8/-1;
+    text-align: right;
+}

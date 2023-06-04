@@ -245,18 +245,21 @@
 .cart-holder {
     position: relative;
     cursor: pointer;
+    padding: 0.5rem 1rem;
 }
 
 .profile-holder,
 .wishlist-holder {
     cursor: pointer;
+    position: relative;
+    padding: 0.5rem 1rem;
 }
 
 .added-count {
     position: absolute;
     background-color: red;
-    right: -40%;
-    top: -50%;
+    right: 10%;
+    top: 1%;
     padding: 0px 3px;
     border-radius: 10px;
     color: #fff;
@@ -842,13 +845,13 @@ input[type='radio'] {
     height: 25vh;
     width: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 
 }
 
-.payment-container .continue-shopping {
+.payment-container .confirm-page-btn {
     outline: 1px solid var(--shadow-color);
     background-color: var(--pink);
     color: var(--shuttle-grey);
@@ -857,11 +860,22 @@ input[type='radio'] {
     text-decoration: none;
     font-weight: 600;
     border: none;
+    font-size: 1.05rem;
+    cursor: pointer;
 }
 
-.payment-container .continue-shopping:hover {
+.payment-container .confirm-page-btn:hover {
     background-color: var(--pink-hover);
 }
+
+.payment-container .track:hover {
+    background-color: var(--primary-color);
+}
+
+.payment-container .track {
+    background-color: var(--modal-bg);
+}
+
 
 
 @media (max-width: 768px) {

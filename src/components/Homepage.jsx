@@ -98,6 +98,7 @@ function Homepage() {
                 numberOfItemInCart={numberOfItemInCart}
                 setShowItemsInCart={setShowItemsInCart}
                 setSearchValue={setSearchValue}
+                itemsInCart={itemsInCart}
             />
             <MainContent
                 data={dataToBeRendered}

@@ -9,11 +9,18 @@ import {
 import logo from "../../public/assets/myntra-icon-logo.svg";
 import searchIcon from "../../public/assets/search-icon.svg";
 import SubMenuRenderer from "./SubMenuRenderer";
+import UserSubMenu from "./UserSubMenu";
 
-function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
+function Navbar({
+    numberOfItemInCart,
+    setShowItemsInCart,
+    setSearchValue,
+    itemsInCart,
+}) {
     const [submenuData, setSubmenuData] = useState("");
     const [submenuHeadingColor, setSubmenuHeadingColor] = useState("");
     const [isSubMenuHovered, setIsSubMenuHovered] = useState(false);
+    const [showUserOption, setShowUserOption] = useState(false);
 
     const cartClickHandler = () => {
         setShowItemsInCart(true);
@@ -160,10 +167,18 @@ function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
                     />
                 </div>
                 <div className="cart-profile-wishlist-holder">
-                    <div className="profile-holder" onClick={cartClickHandler}>
+                    <div
+                        className="menu-item profile-holder "
+                        onMouseOver={() => setShowUserOption(true)}
+                        onMouseLeave={() => setShowUserOption(false)}
+                    >
                         <box-icon name="user"></box-icon>
+                        {showUserOption && <UserSubMenu />}
                     </div>
-                    <div className="wishlist-holder" onClick={cartClickHandler}>
+                    <div
+                        className="wishlist-holder menu-item"
+                        onClick={cartClickHandler}
+                    >
                         <box-icon name="shopping-bag"></box-icon>
                         {/* {numberOfItemInCart && (
                             <div className="added-count">
@@ -171,7 +186,10 @@ function Navbar({ numberOfItemInCart, setShowItemsInCart, setSearchValue }) {
                             </div>
                         )} */}
                     </div>
-                    <div className="cart-holder" onClick={cartClickHandler}>
+                    <div
+                        className="cart-holder menu-item"
+                        onClick={cartClickHandler}
+                    >
                         <box-icon name="cart"></box-icon>
                         {numberOfItemInCart > 0 && (
                             <div className="added-count">

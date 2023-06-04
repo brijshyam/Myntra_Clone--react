@@ -1,0 +1,67 @@
+.user-submenu {
+    position: absolute;
+    width: 210px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    top: 100%;
+    left: -150%;
+    background-color: var(--shuttle-grey);
+    box-shadow: 2px 2px 2px var(--shadow-color);
+    border-radius: 5px;
+    z-index: 3;
+}
+
+.user-submenu .submenu-title {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--shadow-color);
+
+}
+
+.submenu-title p {
+    color: #888;
+    font-size: 0.7rem
+}
+
+.submenu-title .login-btn {
+    margin-top: 0.7rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--pink);
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submenu-title .login-btn:hover {
+    background-color: var(--pink-hover);
+}
+
+.user-submenu ul>li {
+    list-style: none;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    border-bottom: 1px solid var(--shadow-color);
+    font-size: 0.9rem;
+    color: var(--shadow-color);
+    cursor: not-allowed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    font-weight: 500;
+}
+
+.user-submenu .active {
+    color: var(--primary-color);
+    cursor: pointer;
+
+}
+
+.active:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px; */
+    font-weight: 700;
+}

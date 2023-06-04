@@ -6,6 +6,7 @@ import { BoxIconElement } from 'boxicons';
 import Homepage from './Homepage';
 import LandingPage from './LandingPage';
 import PaymentPage from './PaymentPage';
+import MyOrders from './MyOrders';
 const App = () => {
 
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/shirt" element={<Homepage />} />
         <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/orders" element={<MyOrders />} />
       </Routes>
     </BrowserRouter>
   )

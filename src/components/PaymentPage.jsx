@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import OrderStatusTimeline from "./OrderStatusTimeline";
 
 function PaymentPage() {
+    const [showStatus, setShowStatus] = useState(false);
     const navigatTo = useNavigate();
     function continueShoppingHandler(e) {
         e.preventDefault();
         navigatTo("/");
     }
+
+    const trackHandler = () => {
+        setShowStatus(!showStatus);
+    };
 
     function randomId() {
         const id = Math.floor(Math.random() * 1e9);
@@ -29,9 +35,16 @@ function PaymentPage() {
                     Your order Id is : {randomId()}{" "}
                 </p>
             </div>
+            {showStatus && <OrderStatusTimeline />}
             <div className="payment-bottom">
                 <button
-                    className="continue-shopping"
+                    className="confirm-page-btn track"
+                    onClick={trackHandler}
+                >
+                    Track Your Order
+                </button>
+                <button
+                    className="confirm-page-btn"
                     onClick={continueShoppingHandler}
                 >
                     Continue Shopping
