@@ -65,3 +65,19 @@
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px; */
     font-weight: 700;
 }
+
+.logout-btn {
+    margin-top: 0.7rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgba(206, 4, 4, 0.726);
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: rgb(206, 4, 4);
+}

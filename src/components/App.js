@@ -7,8 +7,8 @@ import Homepage from './Homepage';
 import LandingPage from './LandingPage';
 import PaymentPage from './PaymentPage';
 import MyOrders from './MyOrders';
+import LoginSignup from './LoginSIgnup';
 const App = () => {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -16,6 +16,7 @@ const App = () => {
         <Route path="/shirt" element={<Homepage />} />
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/orders" element={<MyOrders />} />
+        <Route path="/login-signup" element={<LoginSignup />} />
       </Routes>
     </BrowserRouter>
   )

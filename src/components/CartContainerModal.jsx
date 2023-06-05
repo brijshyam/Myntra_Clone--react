@@ -9,7 +9,6 @@ function CartContainerModal({
     const showModalHandler = () => {
         setShowItemsInCart(false);
     };
-    console.log(itemsInCart, "items in cart");
     return (
         showItemsInCart && (
             <div id="cart-modal-content">

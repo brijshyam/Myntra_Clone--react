@@ -3,6 +3,7 @@ import "../styles/UserSubMenu.css";
 import { useNavigate } from "react-router-dom";
 
 function UserSubMenu() {
+    const user = JSON.parse(localStorage.getItem("userData"));
     const currentColor = document.documentElement.style.getPropertyValue(
         "--menu-underline-color"
     );
@@ -14,13 +15,36 @@ function UserSubMenu() {
     const orderClickHandler = () => {
         navigateTo("/orders");
     };
+
+    const logoutHandler = () => {
+        const stored = JSON.parse(localStorage.getItem("userData"));
+        stored.loggedIn = false;
+        localStorage.setItem("userData", JSON.stringify(stored));
+        navigateTo("/");
+    };
     return (
         <div className="submenu-col user-submenu">
             <div className="submenu-title">
-                <p>To access account and manage orders</p>
-                <button className="login-btn" onClick={loginHandler}>
-                    Login / Signup
-                </button>
+                {!user.loggedIn ? (
+                    <>
+                        {" "}
+                        <p>To access account and manage orders</p>
+                        <button className="login-btn" onClick={loginHandler}>
+                            Login / Signup
+                        </button>
+                    </>
+                ) : (
+                    <p
+                        style={{
+                            color: currentColor,
+                            fontSize: "1rem",
+                            fontWeight: "500",
+                            textTransform: "capitalize",
+                        }}
+                    >
+                        Hi, {user.name}
+                    </p>
+                )}
             </div>
             <ul>
                 <li className="submenu-item active" onClick={orderClickHandler}>
@@ -35,6 +59,9 @@ function UserSubMenu() {
                 <li className="submenu-item">item1</li>
                 <li className="submenu-item">item1</li>
             </ul>
+            <button className="logout-btn" onClick={logoutHandler}>
+                Logout
+            </button>
         </div>
     );
 }
