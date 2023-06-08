@@ -7,7 +7,8 @@ import Homepage from './Homepage';
 import LandingPage from './LandingPage';
 import PaymentPage from './PaymentPage';
 import MyOrders from './MyOrders';
-import LoginSignup from './LoginSIgnup';
+import LoginSignup from './Onboarding';
+
 const App = () => {
   return (
     <BrowserRouter>
