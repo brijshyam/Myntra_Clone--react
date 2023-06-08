@@ -107,6 +107,7 @@ const SignUpFields = ({ setSignup }) => {
         nameRef.current.value = "";
         emailRef.current.value = "";
         passRef.current.value = "";
+        setSignup(false);
     };
     return (
         <div className="login-container">
