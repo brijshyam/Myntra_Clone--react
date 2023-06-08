@@ -3,7 +3,12 @@ import "../styles/UserSubMenu.css";
 import { useNavigate } from "react-router-dom";
 
 function UserSubMenu() {
-    const user = JSON.parse(localStorage.getItem("userData"));
+    const user = JSON.parse(localStorage.getItem("userData")) || {
+        name: "",
+        email: "",
+        password: "",
+        loggedIn: false,
+    };
     const currentColor = document.documentElement.style.getPropertyValue(
         "--menu-underline-color"
     );

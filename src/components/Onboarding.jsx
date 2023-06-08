@@ -92,10 +92,7 @@ const SignUpFields = () => {
 
     const signUpClickHandler = (e) => {
         e.preventDefault();
-        if (
-            JSON.parse(localStorage.getItem("userData")).email ===
-            emailRef.current.value
-        ) {
+        if (userData.email === emailRef.current.value) {
             setError("Entered email id already is already registered!");
         } else {
             const newUser = {
@@ -107,6 +104,9 @@ const SignUpFields = () => {
             const dataEntered = localStorage.getItem("userData");
             console.log(dataEntered);
         }
+        nameRef.current.value = "";
+        emailRef.current.value = "";
+        passRef.current.value = "";
     };
     return (
         <div className="login-container">
