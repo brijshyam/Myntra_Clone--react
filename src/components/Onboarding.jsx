@@ -66,13 +66,13 @@ function LoginSignup() {
                     </div>
                 </div>
             ) : (
-                <SignUpFields />
+                <SignUpFields setSignup={setSignup} />
             )}
         </div>
     );
 }
 
-const SignUpFields = () => {
+const SignUpFields = ({ setSignup }) => {
     const emailRef = useRef();
     const nameRef = useRef();
     const passRef = useRef();
@@ -93,7 +93,7 @@ const SignUpFields = () => {
     const signUpClickHandler = (e) => {
         e.preventDefault();
         if (userData.email === emailRef.current.value) {
-            setError("Entered email id already is already registered!");
+            setError("Entered email id is already registered!");
         } else {
             const newUser = {
                 name: nameRef.current.value,
@@ -134,7 +134,7 @@ const SignUpFields = () => {
                 <button className="btn" onClick={signUpClickHandler}>
                     Signup
                 </button>
-                <button className="btn" onClick={() => set}>
+                <button className="btn" onClick={() => setSignup(false)}>
                     Login
                 </button>
             </form>
