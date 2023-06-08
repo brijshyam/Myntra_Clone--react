@@ -102,12 +102,11 @@ const SignUpFields = ({ setSignup }) => {
             };
             localStorage.setItem("userData", JSON.stringify(newUser));
             const dataEntered = localStorage.getItem("userData");
-            console.log(dataEntered);
+            setSignup(false);
         }
         nameRef.current.value = "";
         emailRef.current.value = "";
         passRef.current.value = "";
-        setSignup(false);
     };
     return (
         <div className="login-container">
